@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  overflow-y: hidden;
+}
+
+header h2 {
+  margin: 10px;
+  text-align: center;
+  font-weight: lighter;
+}
+.function-container::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.main-container {
+  height: 100vh;
+  background-color: #efefee;
+}
+
+.card-container {
+  float: left;
+  width: 70%;
+  display: flex;
+  height: 450px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  width: 30%;
+  height: 50%;
+  color: #ffffff;
+  font-size: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-grey {
+  background-color: #bfbfbf;
+  border-left: 10px solid #bfbfbf;
+}
+
+.card-lightblue {
+  background-color: #6f98a8;
+  border-left: 10px solid #6f98a8;
+}
+
+.card-midblue {
+  background-color: #2b8ead;
+  border-left: 10px solid #2b8ead;
+}
+
+.card-darkblue {
+  background-color: #2f454e;
+  border-left: 10px solid#2f454e;
+}
+
+.button-container {
+  float: right;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+}
+
+button {
+  margin: 10% 40% 0 10%;
+  padding: 20px;
+  color: #ffffff;
+  background-color: #72c3dc;
+  border-radius: 12px;
+  justify-content: center;
+  border: 0px;
+  box-shadow: 0px 5px #2b8ead;
+  cursor: pointer;
+}
+
+footer {
+  font-style: italic;
+  text-align: center;
+  color: #333333;
+  display: block;
+}
+
+@media only screen and (max-width: 500px) {
+  .main-container {
+    background-color: #ffffff;
+  }
+  header h2 {
+    background-color: #333333;
+    color: white;
+    margin: 0px;
+  }
+
+  .card-container {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .button-container {
+    height: 0px;
+    width: 20px;
+    float: none;
+    margin: 2% 25% 8% 25%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card {
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    color: #000000;
+    font-size: 25px;
+    background-color: #efefef;
+    display: flex;
+  }
+
+  footer {
+    margin: 0px;
+  }
+}
